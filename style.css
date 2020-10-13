@@ -12,6 +12,10 @@
     --font_action : "Mulish",serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-size: 16px;
 }
@@ -55,6 +59,10 @@ body{
     transform: rotate(-45deg) translate(.1rem, -.32rem);
 }
 
+.hamburguer{
+    z-index: 170;
+}
+
 .hamburguer span{
     position: absolute;
     left: 3rem;
@@ -68,6 +76,7 @@ body{
     font-family: var(--font_action);
     opacity: 0;
     transition: all 1s;
+    
 }
 
 .hamburguer span::before{
@@ -182,6 +191,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -575,3 +585,53 @@ header{
     cursor: pointer;
     grid-column: 2;
 }
+
+footer{
+    width: 100%;
+    height: 10rem;
+    background-color: #17181b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.5rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #7303c0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,  #ec38bc, #7303c0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ec38bc, #7303c0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow: 0 .1rem 0.6rem #000000;
+}
+
