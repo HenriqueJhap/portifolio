@@ -220,7 +220,7 @@
                     <h1>Faça um Orçamento</h1>
                     <form>
                         <label for="qtd">Qtde de Páginas</label>
-                        <input type="number" min="1" id="qtde">
+                        <input type="number" min="1" id="qtd">
                         <label for="js">Preciso de um scipt JS</label>
                         <input type="checkbox" name="js" id="js">
                         <label>Layout</label>
@@ -231,12 +231,13 @@
                             </div>
 
                             <div>
-                                <input type="radio" name="layout" id="layout-nap">
+                                <input type="radio" name="layout" id="layout-nao">
                                 <label for="layout-nao">Já tenho um layout</label>
                             </div>
                         </div>
                         <label for="prazo">Prazo</label>
-                        <input type="range" min="10" max="30" step="5" name="prazo" id="prazo">
+                        <input type="range" min="1" max="10" name="prazo" id="prazo">
+                        <label id="preco-total">R$ 0,00</label>
                         <button class="btn btn-orcamento" type="submit">Enviar</button>
                     </form>
                 </div>
